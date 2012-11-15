@@ -1,0 +1,15 @@
+# GET
+curl localhost:12357/users
+curl localhost:12357/users/1
+
+# POST
+curl --data "{\"name\":\"jim\",\"age\":11}" localhost:12357/users/
+
+# DELETE
+curl -X DELETE localhost:12357/users/2
+
+# PUT
+curl -X PUT --data "{\"name\":\"jim\",\"age\":11}" localhost:12357/users/50
+curl -X PUT --data "{\"age\":12}" localhost:12357/users/50
+curl -X PUT --data "{\"name\":\"vserver1\"}" localhost:12357/vservers/1
+
